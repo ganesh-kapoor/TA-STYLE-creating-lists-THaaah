@@ -23,6 +23,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+ol, ul {
+	list-style: none;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -35,51 +38,99 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Custom Styles */
+/* Custom styles */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body{
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.5;
-    background-color: #D4CEA7;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.5;
+	background-color: #D4CEA7;
 }
-.flex {
-    display: flex;
+ol{
+	list-style: decimal;
 }
-/* Header */
-.header{
-    padding: 20px 0;
-    background-color: #F9643F;
+ul{
+	list-style: disc;
+}
+ol,ul{
+	padding-left: 40px;;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.justify-start{
+	justify-content: flex-start;
+}
+.stretch{
+	align-items: stretch;
 }
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 36px;
-    
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 32px;
 }
-.nav li a{
-    text-decoration: none;
-    color: #ffffff;
-    margin-right: 32px;
-    font-weight: 500;
+/* Navbar */
+.nav-bar{
+	background-color: #F9643F;
+	padding: 32px 0;
 }
-.nav li{
-    list-style-type: none;
+.nav-bar ul{
+	list-style: none;
+	padding-left: 0; 
 }
-.order-list-container{
-    margin-top: 32px;
-    color: #ffffff;
+.nav-bar a{
+	text-decoration: none;
+	font-size: 24px;
+	margin-right: 32px;
+	color: #fff;
 }
-.order-list-boxes{
-    width: 32%;
-    height: 400px;
-    background-color: #005979;
-    padding: 26px 36px;
+/* Lists */
+.menu-wrapper{
+	padding: 60px 0;
 }
-.order-list{
-    background-color: #005979;
+.menu{
+	background-color: #005979;
+	color: #fff;
+	font-size: 24px;
+	padding: 32px 0;
+	padding-left: 60px;
+	width: 30%;
+}
+.menu li{
+	line-height: 2;
+}
+.sub-menu{
+	list-style: square;
+}
+/* Description List */
+dl{
+	font-size: 20px;
+}
+dt{
+	font-size: 32px;
+}
+dd{
+	margin-left: 44px;
+	margin-bottom: 32px;
+}
+/* Footer */
+.footer{
+	padding: 40px 0;
+	background-color: #252C22;
+}
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+.footer a{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 32px;
+	font-size: 24px;
 }
